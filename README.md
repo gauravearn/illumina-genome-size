@@ -73,6 +73,10 @@ fi
     echo "${fastqreads}/final_reads/genomeplots"
 
 # source the R function
+#!/usr/bin/R
+# -*- coding:  utf-8 -*-
+# Author: Gaurav Sablok
+# date: 2023-10-23
 stacking_option <- function(){
     library(dplyr)
     library(magick)

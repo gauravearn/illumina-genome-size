@@ -64,12 +64,12 @@ then
      jellyfish hito -o "{speciesname}".histo -t "${threads}" -l 1 \
                                                 -h 100000000 -i 1 "${speciesname}".counts.txt
      draw_kmer_distribution_from_histo.py -o "${speciesname}" \
-                                -w "${coverage}" -g "((${coverage}+100))" -e png
+                                -w "${coverage}" -g "${((${coverage}+100))}" -e png
      cp -r *.png "${fastqreads}/final_reads/genomeplots"
 elif [[ $jellyfish ]] && [[ $option == "database" ]]
 then
      draw_kmer_distribution_from_jf_db.py -i "${speciesname}".jf  -o "${speciesname}" \
-                                                    -w "${coverage}" -g "(${coverage}+100))"
+                                                    -w "${coverage}" -g "${((${coverage}+100))}"
      cp -r *.png "${fastqreads}/final_reads/genomeplots"
 fi 
     echo "finished making the genome size estimation and the plots are present in the following directory"

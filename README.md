@@ -1,9 +1,8 @@
 # illumina-genome-size
-estimation of the genome size for the illumina reads, only for the pre-screening purposes. if you have multiple illumina reads from the miseq, nextseq, and other illumina platform a short function to estimate the genome size. You can also write using the pillow library in python but i want to write today R. If you want me to write in python then leave a comment. 
+estimation of the genome size for the illumina reads, only for the pre-screening purposes. if you have multiple illumina reads from the miseq, nextseq, and other illumina platform a short function to estimate the genome size. You can also write using the pillow library in python but i want to write today R. If you want me to write in python then leave a comment. give the fastq reads directory path and it will output calling a R function with publication ready figures.
 
-You simply have to give the fastq reads directory path and it will output calling a R function with publication ready figures.
-
-# source the R function
+> source the R function
+```
 #!/usr/bin/R
 # -*- coding:  utf-8 -*-
 # Author: Gaurav Sablok

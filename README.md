@@ -5,7 +5,7 @@ estimation of the genome size for the illumina reads, only for the pre-screening
 ```
 #!/usr/bin/R
 # -*- coding:  utf-8 -*-
-# Author: Gaurav Sablok
+# Author: Gaurav 
 # date: 2023-10-23
 stacking_option <- function(){
     library(dplyr)
@@ -21,7 +21,7 @@ for (i in seq_along(list(path=".", pattern="*.png"))){
 }
 }
 ```
-Gaurav Sablok \
+Gaurav \
 Academic Staff Member \
 Bioinformatics \
 Institute for Biochemistry and Biology \
